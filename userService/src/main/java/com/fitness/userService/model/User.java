@@ -4,13 +4,12 @@ import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-
 import java.time.LocalDateTime;
 
 @Entity
 @Data
 @Table(name="users")
-public class user {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
@@ -26,7 +25,4 @@ public class user {
     private LocalDateTime createdAt;
     @UpdateTimestamp
     private LocalDateTime updatedAt;
-
 }
-
-//adding my jdk updated version
