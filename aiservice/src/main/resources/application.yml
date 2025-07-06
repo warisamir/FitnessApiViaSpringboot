@@ -5,7 +5,8 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017/
       database: fitnessrecommendation
-
+  config:
+    import: classpath:env.properties
 server:
   port: 8083
 
@@ -21,3 +22,8 @@ rabbitmq:
     name: activity.queue
   routing:
     key: activity.tracking
+
+gemini:
+  api:
+    url: ${GEMINI_API_URL}
+    key: ${GEMINI_API_KEY}

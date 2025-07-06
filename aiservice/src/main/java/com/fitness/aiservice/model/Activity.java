@@ -15,5 +15,6 @@ public class Activity {
     private Map<String,Object> additionalMetrics;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+    private String getType;
 
 }
