@@ -1,29 +1,5 @@
 spring:
   application:
     name: ai-service
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/
-      database: fitnessrecommendation
   config:
-    import: classpath:env.properties
-server:
-  port: 8083
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-
-rabbitmq:
-  exchange:
-    name: fitness.exchange
-  queue:
-    name: activity.queue
-  routing:
-    key: activity.tracking
-
-gemini:
-  api:
-    url: ${GEMINI_API_URL}
-    key: ${GEMINI_API_KEY}
+    import: optional:configserver:http://localhost:8888

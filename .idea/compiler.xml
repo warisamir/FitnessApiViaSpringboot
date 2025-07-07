@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="aiservice" />
         <module name="Eureka" />
+        <module name="configserver" />
       </profile>
       <profile name="Annotation profile for acitivityservice" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -27,6 +28,7 @@
       <module name="Eureka" options="-parameters" />
       <module name="acitivityservice" options="-parameters" />
       <module name="aiservice" options="-parameters" />
+      <module name="configserver" options="-parameters" />
       <module name="userService" options="-parameters" />
     </option>
   </component>
