@@ -2,6 +2,12 @@ spring:
   application:
     name: api-gateway
 
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri:
+
   cloud:
     gateway:
       server:
